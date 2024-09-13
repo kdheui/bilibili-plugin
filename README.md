@@ -2,58 +2,55 @@
 
 ## 简介
 
-Bilibili Enhancer 是一个 Chrome 插件，用于增强 Bilibili 网站的用户体验。通过该插件，用户可以根据弹幕类别自定义弹幕显示，并通过交互式的图标按钮方便地筛选弹幕类别。
+**Bilibili Enhancer** 是一个用于增强 Bilibili 网站体验的 Chrome 插件。用户可以根据弹幕类别筛选和自定义显示内容，使用直观的图标按钮快速切换不同类型的弹幕。
 
 ## 功能
 
-- 根据弹幕类别筛选显示内容
-- 通过可视化图标快速切换弹幕类型
-- 每个类别都有独特的图标和鼠标悬停效果
-- 直观的用户界面，易于使用
+- 根据不同类别显示或隐藏弹幕内容。
+- 可视化的图标按钮，让用户轻松选择弹幕类型。
+- 每个弹幕添加内容回复
+- 直观友好的用户界面。
 
 ## 安装步骤
 
-1. **下载插件代码：**
+1. **克隆或下载仓库：**
 
-   - 前往 [插件的 GitHub 仓库](https://github.com/your-repository-url)，并点击 `Code` 按钮，然后选择 `Download ZIP` 下载插件代码。
+   - 克隆仓库：`git clone https://github.com/kdheui/bilibili-plugin.git`
+   - 或者直接前往 [仓库页面](https://github.com/kdheui/bilibili-plugin) 点击 `Code` 按钮并选择 `Download ZIP` 下载插件代码。
 
-2. **解压文件：**
+2. **解压并保存：**
+   - 如果是 ZIP 文件，解压到一个本地文件夹。
 
-   - 将下载的 ZIP 文件解压到本地的某个文件夹中。
-
-3. **在 Chrome 中加载插件：**
-
+3. **在 Chrome 浏览器中加载插件：**
    - 打开 Chrome 浏览器，进入 [扩展程序页面](chrome://extensions/)。
-   - 右上角启用“开发者模式”。
-   - 点击左侧的“加载已解压的扩展程序”，选择解压后的插件文件夹。
-   
-4. **完成安装：**
-   - 安装完成后，你会在浏览器工具栏中看到插件的图标，点击图标即可打开插件界面。
+   - 启用“开发者模式”。
+   - 点击“加载已解压的扩展程序”，然后选择插件文件夹。
+
+4. **安装完成：**
+   - 安装完成后，浏览器工具栏将显示插件图标。点击图标即可访问插件界面。
 
 ## 使用说明
 
-1. **打开 Bilibili 网站：**
+1. **进入 Bilibili 视频页面：**
 
-   插件会在你浏览 Bilibili 视频时自动生效。
+   插件会在你观看 Bilibili 视频时自动生效。
 
 2. **选择弹幕类别：**
+   - 插件界面显示多个类别按钮（如“感叹”、“搞笑”、“吐槽”等）。
+   - 点击图标按钮，页面将根据类别显示或隐藏对应的弹幕。
 
-   在插件界面上，你可以看到多个类别的图标按钮（例如“感叹”、“搞笑”、“吐槽”等）。点击任何图标按钮，页面上会根据你选择的类别显示对应的弹幕。
-
-3. **自定义显示效果：**
-
-   - 鼠标悬停在图标上时，图标会放大并显示类别名称。
-   - 你可以点击不同的图标快速切换弹幕的显示类别。
-
-## 插件开发者
-
-- 作者: [你的名字](https://github.com/your-profile)
-- GitHub 仓库: [插件仓库链接](https://github.com/your-repository-url)
+3. **鼠标悬停效果：**
+   - 当你将鼠标悬停在按钮上时，图标会放大，并显示类别的文字说明。
 
 ## 贡献
 
-如果你发现了任何问题或有功能建议，欢迎提交 [Issue](https://github.com/your-repository-url/issues) 或发送 Pull Request。
+如果你有任何建议或遇到问题，欢迎通过 [Issues](https://github.com/kdheui/bilibili-plugin/issues) 提出，或者提交 Pull Request 来贡献代码。
+
+## 作者
+
+- [kdheui](https://github.com/kdheui)
 
 ## 许可证
 
-该项目基于 MIT 许可证发布。详细信息请查看 [LICENSE](https://github.com/your-repository-url/blob/main/LICENSE)。
+本项目基于 MIT 许可证，详见 [LICENSE](https://github.com/kdheui/bilibili-plugin/blob/main/LICENSE)。
+
