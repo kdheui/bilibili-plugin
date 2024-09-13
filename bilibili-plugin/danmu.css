@@ -1,0 +1,228 @@
+/* 滚动动画 */
+@keyframes scroll-right-to-left {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* 上部弹幕区域样式 */
+.danmu-area-top {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: 30%;
+    overflow: hidden;
+    background-color: transparent;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+/* 下部弹幕区域样式 */
+.danmu-area-bottom {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: 70%;
+    overflow: hidden;
+    background-color: transparent;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+/* 弹幕样式 */
+.danmu-item {
+    position: absolute;
+    white-space: nowrap;
+    padding: 5px;
+    font-size: 16px;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    animation: scroll-right-to-left linear infinite;
+    animation-duration: 10s;
+    pointer-events: auto;
+    z-index: 1;
+}
+
+.danmu-item.mine {
+    background-color: rgba(255, 0, 0, 0.5);
+    border: 1px solid #ff0000;
+}
+
+.danmu-item.category-剧情讨论 {
+    background-color: rgba(255, 165, 0, 0.5); /* 橙色背景 */
+}
+
+.danmu-item.category-吐槽 {
+    background-color: rgba(126, 99, 123, 0.777); /* 橙色背景 */
+}
+
+.danmu-item.category-感叹 {
+    background-color: rgba(135, 206, 250, 0.5); /* 天蓝色背景 */
+}
+
+.danmu-item.category-搞笑 {
+    background-color: rgba(144, 238, 144, 0.5); /* 亮绿色背景 */
+}
+
+.danmu-item.category-应援 {
+    background-color: rgba(255, 20, 147, 0.5); /* 深粉色背景 */
+}
+
+.danmu-item.category-知识补充 {
+    background-color: rgba(255, 255, 0, 0.5); /* 黄色背景 */
+}
+
+.danmu-item.category-其他 {
+    background-color: rgba(211, 211, 211, 0.844); /* 灰色背景 */
+}
+
+
+
+
+/* 悬停时弹幕停止滚动并移到最上层 */
+.danmu-item:hover {
+    animation-play-state: paused;
+    z-index: 9999;
+}
+
+
+/* 上拉面板样式 */
+.danmu-upper-panel {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: auto;
+    background-color: #ffffff;
+    color: #000;
+    padding: 5px 10px;
+    display: none; /* 默认隐藏 */
+    border-radius: 50px;
+    z-index: 10000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #c0c0c0;
+}
+
+
+/* 时间样式 */
+.danmu-upper-panel .time-display {
+    font-weight: bold;
+    margin-right: 10px;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* 操作按钮容器 */
+.danmu-upper-panel .action-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* 按钮之间的间距 */
+}
+
+/* 按钮图标样式 */
+.danmu-upper-panel .action-buttons button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 图标样式 */
+.danmu-upper-panel .action-buttons .like-icon::before {
+    content: '👍'; /* 用emoji替代图标，可以改为实际图标路径 */
+}
+
+.danmu-upper-panel .action-buttons .comment-icon::before {
+    content: '💬';
+}
+
+.danmu-upper-panel .action-buttons .copy-icon::before {
+    content: '📋';
+}
+
+/* 下拉面板样式 */
+.danmu-lower-panel {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: none; /* 默认隐藏 */
+    border-radius: 10px;
+    z-index: 10000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    border: 1px solid #c0c0c0;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.danmu-lower-panel .reply-item {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.danmu-lower-panel .reply-item .reply-time {
+    font-size: 12px;
+    color: #888;
+}
+
+
+/* 悬停时显示上拉和下拉面板 */
+.danmu-item:hover .danmu-upper-panel,
+.danmu-item:hover .danmu-lower-panel {
+    display: flex; /* 悬停时显示上拉和下拉面板 */
+}
+
+/* 弹幕样式 */
+.danmu-item {
+    position: absolute;
+    white-space: nowrap;
+    padding: 5px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    animation: scroll-right-to-left linear infinite;
+    animation-duration: 10s;
+    pointer-events: auto;
+    z-index: 1;
+}
+
+/* 回复内容样式 */
+.danmu-item .reply-content {
+    padding: 10px;
+    background-color: #d3d3d3;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+
+
+/* 防止页面水平滚动 */
+body {
+    overflow-x: hidden;
+}

@@ -1,0 +1,67 @@
+#bilibili-plugin-panel {
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 80px;
+    width: 80%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.9); /* 白色半透明背景 */
+    color: #000; /* 黑色文字 */
+    padding: 10px;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+    z-index: 99999;
+    display: flex;
+    justify-content: space-between; /* 水平间距均匀分配 */
+    align-items: center;
+    font-family: Arial, sans-serif;
+    border-radius: 10px; /* 圆角效果 */
+    border: 5px solid #3cbeff; 
+}
+
+
+#bilibili-plugin-panel span {
+    background-color: rgba(230, 230, 230, 1); /* 灰色背景 */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 10px; /* 与icon-container之间的间隔 */
+    text-align: center; /* 居中对齐文本 */
+    white-space: pre-wrap; /* 保留空白符和换行符 */
+    word-wrap: break-word; /* 强制换行 */
+    width: 40px; /* 根据字体大小调整合适的宽度，确保每行显示两个字 */
+    line-height: 1.5; /* 调整行高使字间距更美观 */
+    margin-left: 10px;
+}
+
+
+.category-button {
+    background-color: transparent; /* 确保背景完全透明 */
+    background-position: center; /* 图片居中 */
+    background-repeat: no-repeat; /* 图片不重复 */
+    border: none; /* 移除边框 */
+    width: 100px; /* 设置按钮宽度 */
+    height: 100px; /* 设置按钮高度 */
+    cursor: pointer; /* 鼠标悬停显示手型 */
+    padding: 0; /* 移除默认的内边距 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease; /* 添加动画效果 */
+}
+
+/* 鼠标悬停时图标放大和阴影 */
+.category-button:hover {
+    transform: scale(1.2); /* 放大1.2倍 */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+    opacity: 1; /* 鼠标悬停时保持不透明 */
+}
+
+/* 鼠标悬停时其他按钮透明度降低 */
+.icon-container:hover .category-button {
+    opacity: 0.5; /* 未悬停按钮透明度降低 */
+}
+
+/* 悬停时，当前图标的透明度恢复 */
+.icon-container:hover .category-button:hover {
+    opacity: 1; /* 悬停的图标保持完全不透明 */
+}
+
+

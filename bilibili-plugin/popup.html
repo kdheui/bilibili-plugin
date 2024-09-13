@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Bilibili Plugin</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+            width: 250px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        #toggle-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        label {
+            font-size: 14px;
+            color: #333;
+        }
+
+        #toggle-switch {
+            position: relative;
+            width: 40px;
+            height: 20px;
+            -webkit-appearance: none;
+            background: #c6c6c6;
+            outline: none;
+            border-radius: 20px;
+            transition: 0.4s;
+            cursor: pointer;
+        }
+
+        #toggle-switch:checked {
+            background: #5daafc;
+        }
+
+        #toggle-switch:before {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            top: 2px;
+            left: 2px;
+            background: #ffffff;
+            transition: 0.4s;
+        }
+
+        #toggle-switch:checked:before {
+            transform: translateX(20px);
+        }
+
+        h1 {
+            font-size: 18px;
+            color: #5daafc;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Bilibili 插件</h1>
+        <div id="toggle-container">
+            <label for="toggle-switch">启用隐藏功能</label>
+            <input type="checkbox" id="toggle-switch">
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

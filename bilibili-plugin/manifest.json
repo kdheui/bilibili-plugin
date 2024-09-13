@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "Bilibili Plugin",
+  "version": "1.0",
+  "description": "A Chrome plugin for enhancing the Bilibili experience.",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.bilibili.com/*"],
+      "js": ["content.js"],
+      "css": ["panel.css", "danmu.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "icons/gantan.png",
+        "icons/gaoxiao.png",
+        "icons/tucao.png",
+        "icons/yingyuan.png",
+        "icons/juqingtaolun.png",
+        "icons/zhishibuchong.png",
+        "icons/qita.png",
+        "balanced_danmus.json",
+        "panel.css",
+        "danmu.css"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
