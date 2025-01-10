@@ -1,56 +1,55 @@
 # Bilibili Enhancer Chrome Plugin
 
-## 简介
+## Introduction
 
-**Bilibili Enhancer** 是一个用于增强 Bilibili 网站体验的 Chrome 插件。用户可以根据弹幕类别筛选和自定义显示内容，使用直观的图标按钮快速切换不同类型的弹幕。
+**Bilibili Enhancer** is a Chrome plugin designed to enhance the user experience on the Bilibili website. With this plugin, users can filter and customize bullet comments based on their categories and quickly switch between different types of comments using intuitive icon buttons.
 
-## 功能
+## Features
+- Display or hide bullet comments based on categories.
+- Intuitive icon buttons for easy selection of bullet comment types.
+- Add content replies to each bullet comment.
+- User-friendly and visually appealing interface.
 
-- 根据不同类别显示或隐藏弹幕内容。
-- 可视化的图标按钮，让用户轻松选择弹幕类型。
-- 每个弹幕添加内容回复
-- 直观友好的用户界面。
+## Installation Steps
 
-## 安装步骤
+1. **Clone or Download the Repository:**
 
-1. **克隆或下载仓库：**
+   - Clone the repository: `git clone https://github.com/kdheui/bilibili-plugin.git`
+   - Or visit the repository page [repository page](https://github.com/kdheui/bilibili-plugin) , click the ’Code‘ button, and choose ’Download ZIP‘ to download the plugin.
+     
+2. **Extract and Save the Files:**
+   - If you downloaded a ZIP file, extract it to a local folder.
+     
+3. **Load the Plugin in Chrome:**
+   - Open the Chrome browser and navigate to the [Extensions page](chrome://extensions/).
+   - Enable "Developer Mode."
+   - Click "Load unpacked" and select the extracted plugin folder.
 
-   - 克隆仓库：`git clone https://github.com/kdheui/bilibili-plugin.git`
-   - 或者直接前往 [仓库页面](https://github.com/kdheui/bilibili-plugin) 点击 `Code` 按钮并选择 `Download ZIP` 下载插件代码。
+4. **Complete Installation:**
+   - Once installed, a plugin icon will appear in the browser toolbar. Click the icon to access the plugin interface.
 
-2. **解压并保存：**
-   - 如果是 ZIP 文件，解压到一个本地文件夹。
+## Usage Instructions
 
-3. **在 Chrome 浏览器中加载插件：**
-   - 打开 Chrome 浏览器，进入 [扩展程序页面](chrome://extensions/)。
-   - 启用“开发者模式”。
-   - 点击“加载已解压的扩展程序”，然后选择插件文件夹。
+1. **Visit a Bilibili Video Page:**
 
-4. **安装完成：**
-   - 安装完成后，浏览器工具栏将显示插件图标。点击图标即可访问插件界面。
+   The plugin automatically activates when you watch videos on Bilibili.
 
-## 使用说明
+2. **Select Bullet Comment Categories:**
+   - The plugin interface displays multiple category buttons (e.g., "Exclamation," "Funny," "Critique").
+   - Click an icon button to show or hide bullet comments of the corresponding category.
 
-1. **进入 Bilibili 视频页面：**
+3. **Mouse Hover Effects:**
+   - When you hover your mouse over a bullet comment, a real-time interaction reply related to that comment will appear.
 
-   插件会在你观看 Bilibili 视频时自动生效。
+## Contribution
 
-2. **选择弹幕类别：**
-   - 插件界面显示多个类别按钮（如“感叹”、“搞笑”、“吐槽”等）。
-   - 点击图标按钮，页面将根据类别显示或隐藏对应的弹幕。
+If you have suggestions or encounter any issues, feel free to open an [Issues](https://github.com/kdheui/bilibili-plugin/issues) or submit a Pull Request to contribute to the project.
 
-3. **鼠标悬停效果：**
-   - 当你将鼠标悬停在按钮上时，图标会放大，并显示类别的文字说明。
-
-## 贡献
-
-如果你有任何建议或遇到问题，欢迎通过 [Issues](https://github.com/kdheui/bilibili-plugin/issues) 提出，或者提交 Pull Request 来贡献代码。
-
-## 作者
+## Author
 
 - [kdheui](https://github.com/kdheui)
 
-## 许可证
+## License
 
-本项目基于 MIT 许可证，详见 [LICENSE](https://github.com/kdheui/bilibili-plugin/blob/main/LICENSE)。
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/kdheui/bilibili-plugin/blob/main/LICENSE) file for details.
 
